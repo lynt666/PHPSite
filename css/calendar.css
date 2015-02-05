@@ -1,0 +1,39 @@
+@charset "UTF-8";
+/* Calendar.js */
+
+.calendar{
+    background-color: #FFFFFF; 
+    border-collapse: collapse;
+}
+
+.calendar th{
+    background-color: #222222;
+    color: #FFFFFF;
+    padding: 10px;
+}
+
+.calendar td{
+    width: 70px;
+    height: 70px;
+    padding: 10px;
+    text-align: right;
+    vertical-align: top;
+    border: 1px solid #777777;
+}
+
+.calendar .week td{
+    font-size: 70%;
+    height: 16px;
+    text-transform: uppercase;
+    text-align: center;
+    vertical-align: middle;
+    background-color: #EFEFEF;
+}
+
+.calendar .weekend{
+     background-color: #C7C7C7;   
+}
+
+.calendar .today{
+     background-color: #CFECFF;   
+}

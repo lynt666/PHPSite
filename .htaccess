@@ -1,0 +1,18 @@
+<IfModule mod_rewrite.c>
+
+RewriteEngine on
+
+RewriteCond %{HTTP_HOST} ^domain.com$
+RewriteRule ^/?$ "http\:\/\/www\.domain\.com\/" [R=301,L]
+
+# Use PHP5 Single php.ini as default
+AddHandler application/x-httpd-php5s .php
+
+
+RewriteBase /
+RewriteRule ^index\.php$ - [L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . /index.php [L]
+
+</IfModule>
